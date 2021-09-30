@@ -158,7 +158,7 @@ span.active::after {
 .home h1 {
   text-transform: capitalize;
   font-size: 3rem;
-  font-family: sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 .home p {
   margin: 20px 0;
