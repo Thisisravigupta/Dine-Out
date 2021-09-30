@@ -158,7 +158,6 @@ span.active::after {
 .home h1 {
   text-transform: capitalize;
   font-size: 3rem;
-  font-family: 'Dancing Script', cursive;
 }
 .home p {
   margin: 20px 0;
