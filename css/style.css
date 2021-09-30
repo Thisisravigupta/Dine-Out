@@ -1,0 +1,438 @@
+/* -----------------
+fonts 
+--------------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+/* ---------Custom scroll-bar---------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(3, 3, 78);
+  border-radius: 10px;
+}
+
+/* --------Global setting------ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  height: auto;
+  font-family: 'Poppins', sans-serif;
+}
+.btn {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: 1.5px solid orange;
+  background-color: transparent;
+  color: orange;
+  transition: all 0.5s;
+  text-transform: capitalize;
+}
+.hover {
+  transition: all 0.5s;
+}
+.hover:hover {
+  transform: translateY(-2px);
+}
+
+/* ------navbar start----------- */
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: fixed;
+  top: 0;
+}
+ul.active {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.5s;
+  transform: translateX(100%);
+}
+ul.open {
+  transform: translateX(0%);
+}
+ul.close {
+  transform: translateX(100%);
+}
+
+ul li {
+  font-size: 25px;
+  padding: 20px 0;
+}
+ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Dancing Script', cursive;
+  text-transform: capitalize;
+}
+
+span {
+  width: 30px;
+  height: 3px;
+  background-color: #fff;
+  position: relative;
+  z-index: 1;
+}
+span::before,
+span::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  transition: all 1s;
+  transform: translateY(-8px);
+}
+span::after {
+  transform: translateY(8px);
+  right: 0;
+}
+span:hover {
+  cursor: pointer;
+}
+span.active {
+  background-color: transparent;
+}
+span.active::before {
+  transform: rotate(45deg);
+  right: 100px;
+}
+span.active::after {
+  transform: rotate(-45deg);
+  right: 100px;
+}
+/* ------navbar end----------- */
+
+/* ------header start----------- */
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/home-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+}
+.header::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* ------header end----------- */
+
+/* --------home start----------- */
+.home {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 10px 20px;
+  color: #fff;
+}
+.home h1 {
+  text-transform: capitalize;
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+}
+.home p {
+  margin: 20px 0;
+  font-size: 14px;
+}
+/* --------home end----------- */
+
+/* --------about start----------- */
+
+.about {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(3, 3, 48);
+}
+.row {
+  text-transform: capitalize;
+  padding: 20px 40px;
+  text-align: center;
+}
+.row h2 {
+  font-size: 1.2rem;
+  color: orange;
+  font-weight: lighter;
+  margin-bottom: 5px;
+  font-family: 'Dancing Script', cursive;
+}
+.row h1 {
+  color: #fff;
+  font-size: 2rem;
+}
+.about .content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: 20px 100px;
+}
+.content .left {
+  width: 50%;
+  padding-right: 10px;
+  color: #fff;
+}
+.left h2 {
+  font-size: 1.8rem;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.left p {
+  padding: 10px 50px 10px 0;
+  text-align: justify;
+  font-size: 15px;
+}
+.left .btn {
+  margin-top: 15px;
+}
+.content .right {
+  width: 50%;
+  padding-left: 10px;
+}
+img {
+  width: 100%;
+  border-radius: 8px;
+}
+/* --------about end----------- */
+
+/* --------our-menu start----------- */
+.our-menu {
+  background-color: rgb(3, 3, 48);
+  width: 100%;
+}
+.ourMenu-tabs {
+  display: flex;
+  justify-content: center;
+}
+.ourMenu-tabs .tab-item {
+  background: none;
+  border: none;
+  padding: 10px 15px;
+  color: #fff;
+  cursor: pointer;
+  user-select: none;
+  outline: none;
+}
+.ourMenu-tabs .tab-item.active {
+  color: orange;
+}
+.all-item {
+  padding: 40px 90px;
+  display: none;
+}
+.all-item.active {
+  display: block;
+}
+.tab-content {
+  width: 100%;
+  display: flex;
+}
+.tab-content .tab-content-item {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.tab-content-item .img-box {
+  display: flex;
+  align-items: center;
+}
+.img-box img {
+  width: 50px;
+  border-radius: 0;
+}
+.img-box h4 {
+  color: #fff;
+  text-transform: capitalize;
+  margin-left: 10px;
+  font-family: sans-serif;
+  font-size: 12px;
+}
+.tab-content-item .price {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+.tab-content-item .price p {
+  color: orange;
+}
+.br {
+  width: 98.5%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 10px auto;
+}
+.br-none{
+  display: none;
+}
+/* --------our-menu end----------- */
+
+.testimonials .row {
+  background-color: rgb(3, 3, 48);
+}
+.testimonials img {
+  width: 50px;
+  border-radius: 50%;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  padding: 20px 100px;
+  background-color: rgb(3, 3, 48);
+  color: #fff;
+}
+.card {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 20px 30px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+.card:first-child {
+  margin-left: 0;
+}
+.card .name-img {
+  display: flex;
+  justify-content: space-between;
+}
+.name-img .name h4 {
+  font-size: 16px;
+  font-family: sans-serif;
+  text-transform: capitalize;
+}
+.name > p {
+  text-transform: capitalize;
+}
+.card p {
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 5px 0 20px 0;
+  color: rgba(255, 255, 255, 0.6);
+}
+.card p i {
+  color: orange;
+}
+
+/* --------team section----- */
+.team {
+  background-color: rgb(3, 3, 48);
+}
+.team .row {
+  padding-top: 70px;
+}
+.team img {
+  width: 350px;
+}
+.team-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 100px;
+  background-color: rgb(3, 3, 48);
+}
+.team-name {
+  background-color: rgb(3, 3, 78);
+  color: #fff;
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+  text-transform: capitalize;
+  font-family: sans-serif;
+  position: relative;
+  top: -35px;
+}
+.team-name h4 {
+  padding-bottom: 10px;
+}
+
+.footer {
+  background-image: url("../img/footer-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.footer::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: absolute;
+}
+.footer-cards {
+  width: 100%;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  color: #fff;
+}
+.footer-card {
+  width: 100%;
+  text-align: center;
+  padding: 50px 20px;
+  font-family: sans-serif;
+}
+.footer-card h4 {
+  text-transform: capitalize;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.footer-card p {
+  padding-bottom: 8px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+}
+.footer-card a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}
+.footer .br {
+  width: 84.3%;
+  background-color: rgba(255, 255, 255, 0.5);
+  position: relative;
+  top: -50px;
+}
+.footer .copy {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 14px;
+  position: relative;
+  color: rgba(255, 255, 255, 0.5);
+  top: -30px;
+}
+.footer a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+}

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dine Out - Restaurant</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="img/logo.png" alt="" class="hover" />
+        </div>
+        <span></span>
+        <ul class="active">
+          <li class="nav-item hover" onclick="closeNav()">
+            <a href="#home">home</a>
+          </li>
+          <li class="nav-item hover" onclick="closeNav()">
+            <a href="#about">about us</a>
+          </li>
+          <li class="nav-item hover" onclick="closeNav()">
+            <a href="#our-menu">our menu</a>
+          </li>
+          <li class="nav-item hover" onclick="closeNav()">
+            <a href="#team">Our team</a>
+          </li>
+          <li class="nav-item hover" onclick="closeNav()">
+            <a href="#testimonials">testimonials</a>
+          </li>
+          <li class="nav-item hover" onclick="closeNav()">
+            <a href="#contact-us">contact us</a>
+          </li>
+        </ul>
+      </nav>
+      <section class="header" id="home">
+        <div class="home">
+          <h1>Dine out Restaurant</h1>
+          <p>
+            Good food is all it takes to make things right. Order delicious food
+            from Dine Out now. Enjoy All Your Favourite Cuisines At 50% Off,
+            When You Order Online On Dine Out.
+          </p>
+          <input type="button" value="our menu" class="btn hover" />
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="row">
+          <h2>our story</h2>
+          <h1 class="hover">About us</h1>
+        </div>
+        <div class="content">
+          <div class="left">
+            <h2>Welcome to dine out Restaurant</h2>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+              nostrum ea adipisci eum quibusdam? Eum possimus temporibus
+              dignissimos distinctio impedit accusamus sunt explicabo nihil
+              dolore!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Magni nostrum ea adipisci eum quibusdam?
+            </p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni
+              nostrum ea adipisci eum quibusdam? Eum possimus temporibus
+              dignissimos distinctio impedit accusamus sunt explicabo nihil
+              dolore!Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Magni nostrum ea adipisci eum quibusdam?
+            </p>
+            <input type="button" value="check our menu" class="btn hover" />
+          </div>
+          <div class="right">
+            <img src="img/about-img.jpg" alt="" class="hover" />
+          </div>
+        </div>
+      </section>
+
+      <section class="our-menu" id="our-menu">
+        <div class="row">
+          <h2>order now</h2>
+          <h1 class="hover">our menu</h1>
+        </div>
+        <!-- ------tabs start--------- -->
+        <div class="ourMenu-tabs">
+          <button
+            type="button"
+            class="tab-item active hover"
+            data-target="#lunch"
+            id="lunch"
+          >
+            Lunch
+          </button>
+          <button
+            type="button"
+            class="tab-item hover"
+            data-target="#dinner"
+            id="dinner"
+          >
+            Dinner
+          </button>
+          <button
+            type="button"
+            class="tab-item hover"
+            data-target="#drinks"
+            id="drinks"
+          >
+            Drinks
+          </button>
+          <button
+            type="button"
+            class="tab-item hover"
+            data-target="#desserts"
+            id="desserts"
+          >
+            Desserts
+          </button>
+        </div>
+        <!-- ---------------tab-content start--------- -->
+        <div class="all-item lunch active">
+          <div class="tab-content">
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/1.jpg" alt="" />
+                <h4>lunch item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+            <div class="br br-none"></div>
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/2.jpg" alt="" />
+                <h4>lunch item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="br"></div>
+          <div class="tab-content">
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/3.jpg" alt="" />
+                <h4>lunch item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+            <div class="br br-none"></div>
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/4.jpg" alt="" />
+                <h4>lunch item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="br"></div>
+          <div class="tab-content">
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/5.jpg" alt="" />
+                <h4>lunch item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+            <div class="br br-none"></div>
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/6.jpg" alt="" />
+                <h4>lunch item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="br"></div>
+          <div class="tab-content">
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/7.jpg" alt="" />
+                <h4>lunch item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+            <div class="br br-none"></div>
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/8.jpg" alt="" />
+                <h4>lunch item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- -----------dinner item------------ -->
+        <div class="all-item dinner">
+          <div class="tab-content">
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/3.jpg" alt="" />
+                <h4>dinner item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+            <div class="br br-none"></div>
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/4.jpg" alt="" />
+                <h4>dinner item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="br"></div>
+          <div class="tab-content">
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/7.jpg" alt="" />
+                <h4>dinner item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+            <div class="br br-none"></div>
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/8.jpg" alt="" />
+                <h4>dinner item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="br"></div>
+          <div class="tab-content">
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/6.jpg" alt="" />
+                <h4>dinner item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+            <div class="br br-none"></div>
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/1.jpg" alt="" />
+                <h4>dinner item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ---------Drinks- item------------ -->
+        <div class="all-item drinks">
+          <div class="tab-content">
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/8.jpg" alt="" />
+                <h4>drinks item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+            <div class="br br-none"></div>
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/6.jpg" alt="" />
+                <h4>drinks item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ---------Desserts item------------ -->
+        <div class="all-item desserts">
+          <div class="tab-content">
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/2.jpg" alt="" />
+                <h4>desserts item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+            <div class="br br-none"></div>
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/4.jpg" alt="" />
+                <h4>desserts item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+          </div>
+          <div class="br"></div>
+          <div class="tab-content">
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/1.jpg" alt="" />
+                <h4>desserts item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+            <div class="br br-none"></div>
+            <div class="tab-content-item hover">
+              <div class="img-box">
+                <img src="img/menu/3.jpg" alt="" />
+                <h4>desserts item</h4>
+              </div>
+              <div class="price">
+                <p>$40.00</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- ---------------tab-content end--------- -->
+
+        <!-- ------tabs end--------- -->
+      </section>
+
+      <setion class="testimonials" id="testimonials">
+        <div class="row">
+          <h2>testimonials</h2>
+          <h1 class="hover">Some feedbacks</h1>
+        </div>
+        <div class="cards">
+          <div class="card hover">
+            <div class="name-img">
+              <div class="name">
+                <h4>Luci</h4>
+                <p>Food specialist</p>
+              </div>
+              <div class="img-bx">
+                <img src="img/testimonials/1.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card-about">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                vitae ipsa veniam harum quia omnis?
+              </p>
+              <p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+              </p>
+            </div>
+          </div>
+          <div class="card hover">
+            <div class="name-img">
+              <div class="name">
+                <h4>Rose</h4>
+                <p>Food specialist</p>
+              </div>
+              <div class="img-bx">
+                <img src="img/testimonials/2.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card-about">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                vitae ipsa veniam harum quia omnis?
+              </p>
+              <p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-o"></i>
+                <i class="fa fa-star-o"></i>
+              </p>
+            </div>
+          </div>
+          <div class="card hover">
+            <div class="name-img">
+              <div class="name">
+                <h4>Joe</h4>
+                <p>Food specialist</p>
+              </div>
+              <div class="img-bx">
+                <img src="img/testimonials/3.jpg" alt="" />
+              </div>
+            </div>
+            <div class="card-about">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                ipsum dolor sit amet consectetur adipisicing elit. Inventore
+                vitae ipsa veniam harum quia omnis?
+              </p>
+              <p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-o"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+      </setion>
+
+      <section class="team" id="team">
+        <div class="row">
+          <h2>team</h2>
+          <h1 class="hover">our chefs</h1>
+        </div>
+        <div class="team-cards">
+          <div class="team-card hover">
+            <div class="team-img-box">
+              <img src="img/team/1.jpg" alt="" />
+            </div>
+            <div class="team-name hover">
+              <h4>Manny</h4>
+              <p>head chef</p>
+            </div>
+          </div>
+          <div class="team-card hover">
+            <div class="team-img-box">
+              <img src="img/team/2.jpg" alt="" />
+            </div>
+            <div class="team-name hover">
+              <h4>Raj</h4>
+              <p>head chef</p>
+            </div>
+          </div>
+          <div class="team-card hover">
+            <div class="team-img-box">
+              <img src="img/team/3.jpg" alt="" />
+            </div>
+            <div class="team-name hover">
+              <h4>Roy</h4>
+              <p>head chef</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="footer-cards">
+          <div class="footer-card hover">
+            <h4>Our location</h4>
+            <p>xyz Street, Sector-12,</p>
+            <p>New Delhi - 000 ****</p>
+          </div>
+          <div class="footer-card hover">
+            <h4>Opening hours</h4>
+            <p>Monday to Sunday</p>
+            <p>9.00 AM to 10.00 PM</p>
+          </div>
+          <div class="footer-card hover" id="contact-us">
+            <h4>contact us</h4>
+            <p>91 8299 500 ***</p>
+            <p><a href="">info@gmail.com</a></p>
+            <p>
+              <i class="fa facebook-f"></i>
+            </p>
+          </div>
+        </div>
+        <div class="br"></div>
+        <div class="copy hover">
+          &copy; 2021 - Designed By
+          <a href="https://thisisravigupta.github.io/Mr.Ravi" target="_blank"
+            >Mr. Ravi</a
+          >
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
