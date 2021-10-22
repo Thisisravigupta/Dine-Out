@@ -38,6 +38,11 @@ fonts
   text-decoration: none;
   font-size: 12px;
 }
+.btn:hover{
+  background-color: orange;
+  color:rgb(3, 3, 48);
+  font-weight: 500;
+}
 .hover {
   transition: all 0.5s;
 }
